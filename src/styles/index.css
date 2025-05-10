@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Godoqon;
+  src: local("Godoqon"),
+  url(../assets/godoqon.otf);
+  font-weight: bold;
+}
+
+html {
+  text-align: center;
+}
+
+h1 {
+  font-family: Godoqon;
+  font-size: 80px;
+}
