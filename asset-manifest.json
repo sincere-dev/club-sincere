@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/club-sincere/static/css/main.f420b21e.css",
+    "main.js": "/club-sincere/static/js/main.e804f9e5.js",
+    "index.html": "/club-sincere/index.html",
+    "main.f420b21e.css.map": "/club-sincere/static/css/main.f420b21e.css.map",
+    "main.e804f9e5.js.map": "/club-sincere/static/js/main.e804f9e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f420b21e.css",
+    "static/js/main.e804f9e5.js"
+  ]
+}
