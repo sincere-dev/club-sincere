@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/club-sincere/static/css/main.2999d34f.css",
-    "main.js": "/club-sincere/static/js/main.1b89ee44.js",
-    "static/media/godoqon.otf": "/club-sincere/static/media/godoqon.0e2154cbe934d6fc01b7.otf",
-    "index.html": "/club-sincere/index.html",
-    "main.2999d34f.css.map": "/club-sincere/static/css/main.2999d34f.css.map",
-    "main.1b89ee44.js.map": "/club-sincere/static/js/main.1b89ee44.js.map"
+    "main.css": "/static/css/main.29b52eec.css",
+    "main.js": "/static/js/main.1b89ee44.js",
+    "static/media/godoqon.otf": "/static/media/godoqon.0e2154cbe934d6fc01b7.otf",
+    "index.html": "/index.html",
+    "main.29b52eec.css.map": "/static/css/main.29b52eec.css.map",
+    "main.1b89ee44.js.map": "/static/js/main.1b89ee44.js.map"
   },
   "entrypoints": [
-    "static/css/main.2999d34f.css",
+    "static/css/main.29b52eec.css",
     "static/js/main.1b89ee44.js"
   ]
 }
