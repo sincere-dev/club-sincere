@@ -5,7 +5,17 @@ interface OwnProps {
 }
 
 export const ContentItem = ({ style }: OwnProps) => (
-  <div style={{ border: '1px dotted green', width: '300px', height: '400px', ...style }}>
-    item
+  <div
+    style={{
+      border: '1px dotted green',
+      width: '300px',
+      height: '400px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      ...style
+    }}
+  >
+    😱
   </div>
 );

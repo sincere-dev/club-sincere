@@ -1,0 +1,1 @@
+export { DifferentFuturePage } from './DifferentFuturePage';
