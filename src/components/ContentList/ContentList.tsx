@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { TITLE } from '../../constants/words';
-import { ContentItem } from '../ContentItem';
 
 export const ContentList = () => (
   <div>
@@ -12,10 +11,11 @@ export const ContentList = () => (
         background: 'linear-gradient(to bottom, white, rgba(255, 255, 255, 0))',
       }} />
     </div>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
-      {Array.from({ length: 7 }, (_, i) => (
-        <ContentItem key={i} style={{ marginBottom: '28px' }} />
-      ))}
-    </div>
+    <div style={{ height: '800px' }} />
+    {/*<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>*/}
+    {/*  {Array.from({ length: 7 }, (_, i) => (*/}
+    {/*    <ContentItem key={i} style={{ marginBottom: '28px' }} />*/}
+    {/*  ))}*/}
+    {/*</div>*/}
   </div>
 );
