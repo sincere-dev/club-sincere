@@ -8,7 +8,7 @@ export const RudePage = () => {
   };
 
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div>
       <video
         style={{
           width: '100%',
