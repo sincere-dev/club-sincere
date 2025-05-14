@@ -1,26 +1,7 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
-export const RudePage = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+import { VideoContainer } from '../../components/VideoContainer';
 
-  const handlePlay = () => {
-    videoRef.current?.play();
-  };
-
-  return (
-    <div>
-      <video
-        style={{
-          width: '100%',
-          height: '100vh',
-          objectFit: 'cover',
-        }}
-        onClick={handlePlay}
-        ref={videoRef}
-        loop
-      >
-        <source src="/vid/rude.webm" type="video/webm" />
-      </video>
-    </div>
-  );
-};
+export const RudePage = () => (
+  <VideoContainer srcPath="/vid/rude.webm" typeString="video/webm" />
+);
