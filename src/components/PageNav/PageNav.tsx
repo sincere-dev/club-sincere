@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { DIFFERENT_FUTURE, HOME, HUMILIATION } from '../../constants/routes';
+import { DISSOLVE, HOME } from '../../constants/routes';
 
 export const PageNav = () => (
   <div style={{ position: 'fixed', bottom: 0, width: '100%' }}>
@@ -11,8 +11,7 @@ export const PageNav = () => (
     }} />
     <nav style={{ background: 'white' }}>
       <Link to={HOME}>home</Link>{' | '}
-      <Link to={DIFFERENT_FUTURE}>future</Link>{' | '}
-      <Link to={HUMILIATION}>this century</Link>
+      <Link to={DISSOLVE}>dissolve</Link>
     </nav>
   </div>
 );

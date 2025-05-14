@@ -1,3 +1,4 @@
 export const HOME = '/';
-export const DIFFERENT_FUTURE = '/future';
+export const FUTURE = '/future';
 export const HUMILIATION = '/humiliation';
+export const DISSOLVE = '/dissolve';

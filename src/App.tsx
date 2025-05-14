@@ -2,19 +2,15 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import { MainPage } from './pages/MainPage';
-import { DifferentFuturePage } from './pages/DifferentFuturePage';
-import { HumiliationPage } from './pages/HumiliationPage';
-import { DIFFERENT_FUTURE, HOME, HUMILIATION } from './constants/routes';
-import { PageNav } from './components/PageNav/PageNav';
+import { HOME, DISSOLVE } from './constants/routes';
+import { DissolvePage } from './pages/DissolvePage';
 
 const App = () => (
   <Router>
     <Routes>
       <Route path={HOME} element={<MainPage />} />
-      <Route path={DIFFERENT_FUTURE} element={<DifferentFuturePage />} />
-      <Route path={HUMILIATION} element={<HumiliationPage />} />
+      <Route path={DISSOLVE} element={<DissolvePage />} />
     </Routes>
-    <PageNav />
   </Router>
 );
 
