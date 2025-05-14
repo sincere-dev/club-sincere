@@ -7,7 +7,7 @@ export const ContentList = () => (
     <div style={{ position: 'sticky', top: 0, marginTop: '30px' }}>
       <h1>{TITLE}</h1>
       <div style={{
-        height: '100px',
+        height: '140px',
         background: 'linear-gradient(to bottom, white, rgba(255, 255, 255, 0))',
       }} />
     </div>
