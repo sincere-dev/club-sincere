@@ -1,0 +1,1 @@
+export { RudePage } from './RudePage';
