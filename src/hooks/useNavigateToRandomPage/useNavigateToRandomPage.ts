@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 
-import { getNextUniqueRoute } from './getNextUniqueRoute';
+import { getNextUnvisitedRoute } from './getNextUnvisitedRoute';
 
 export const useNavigateToRandomPage = () => {
   const navigate = useNavigate();
 
   return () => {
-    navigate(getNextUniqueRoute());
+    navigate(getNextUnvisitedRoute());
   };
 };

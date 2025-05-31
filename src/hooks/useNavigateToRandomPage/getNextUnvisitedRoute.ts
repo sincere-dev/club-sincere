@@ -2,7 +2,7 @@ import { AppRoutes, pageRoutes } from '../../constants/routes';
 
 const LOCAL_STORAGE_KEY = 'sincerelyVisitedRoutes';
 
-export const getNextUniqueRoute = (): string => {
+export const getNextUnvisitedRoute = (): string => {
   const visitedRoutesRaw = localStorage.getItem(LOCAL_STORAGE_KEY);
   let visitedRoutes: string[] = [];
 
