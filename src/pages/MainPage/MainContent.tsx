@@ -7,7 +7,7 @@ import { TITLE } from '../../constants/words';
 export const MainContent = () => {
   return (
     <div style={{ background: OFF_WHITE }}>
-      <div style={{ position: 'sticky', top: 0, marginTop: '30px' }}>
+      <div style={{ position: 'sticky', top: 0, marginTop: '30px', textAlign: 'center' }}>
         <h1>{TITLE}</h1>
         <div
           style={{
