@@ -6,7 +6,6 @@ export const DissolvePage = () => (
   <VideoContainer srcPath="/vid/dissolve.mp4" typeString="video/mp4">
     <p
       style={{
-        pointerEvents: 'none',
         position: 'absolute',
         top: '44%',
         right: 0,
