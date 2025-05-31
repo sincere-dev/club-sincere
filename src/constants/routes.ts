@@ -2,6 +2,7 @@ export enum AppRoutes {
   HOME = '/',
   DISSOLVE = '/dissolve',
   EXCHANGE = '/exchange',
+  FREE = '/free',
   HUMILIATION = '/humiliation',
   KARL = '/karl',
   MEMORY = '/memory',

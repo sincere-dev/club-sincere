@@ -5,6 +5,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { AppRoutes } from './constants/routes';
 import { DissolvePage } from './pages/DissolvePage';
 import { ExchangePage } from './pages/ExchangePage';
+import { FreePage } from './pages/FreePage';
 import { HumiliationPage } from './pages/HumiliationPage';
 import { KarlPage } from './pages/KarlPage';
 import { MainPage } from './pages/MainPage';
@@ -18,6 +19,7 @@ const App = () => (
       <Route path={AppRoutes.HOME} element={<MainPage />} />
       <Route path={AppRoutes.DISSOLVE} element={<DissolvePage />} />
       <Route path={AppRoutes.EXCHANGE} element={<ExchangePage />} />
+      <Route path={AppRoutes.FREE} element={<FreePage />} />
       <Route path={AppRoutes.HUMILIATION} element={<HumiliationPage />} />
       <Route path={AppRoutes.KARL} element={<KarlPage />} />
       <Route path={AppRoutes.MEMORY} element={<MemoryPage />} />
