@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.11ca9c40.css",
-    "main.js": "/static/js/main.ecba6129.js",
+    "main.js": "/static/js/main.4a8a3cdd.js",
     "static/media/godoqon.otf": "/static/media/godoqon.0e2154cbe934d6fc01b7.otf",
     "index.html": "/index.html",
     "main.11ca9c40.css.map": "/static/css/main.11ca9c40.css.map",
-    "main.ecba6129.js.map": "/static/js/main.ecba6129.js.map"
+    "main.4a8a3cdd.js.map": "/static/js/main.4a8a3cdd.js.map"
   },
   "entrypoints": [
     "static/css/main.11ca9c40.css",
-    "static/js/main.ecba6129.js"
+    "static/js/main.4a8a3cdd.js"
   ]
 }
