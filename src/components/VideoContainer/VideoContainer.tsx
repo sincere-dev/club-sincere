@@ -49,4 +49,4 @@ export const VideoContainer = ({ srcPath, typeString, isFullPage, children }: Ow
       <PhoneFallback />
     </>
   );
-}
+};

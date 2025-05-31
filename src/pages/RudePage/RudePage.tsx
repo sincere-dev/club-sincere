@@ -25,4 +25,4 @@ export const RudePage = () => {
       </p>
     </VideoContainer>
   );
-}
+};

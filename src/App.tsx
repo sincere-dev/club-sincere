@@ -1,11 +1,12 @@
 import React from 'react';
+
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-import { MainPage } from './pages/MainPage';
 import { AppRoutes } from './constants/routes';
 import { DissolvePage } from './pages/DissolvePage';
 import { ExchangePage } from './pages/ExchangePage';
 import { HumiliationPage } from './pages/HumiliationPage';
+import { MainPage } from './pages/MainPage';
 import { MemoryPage } from './pages/MemoryPage';
 import { PlussedPage } from './pages/PlussedPage';
 import { RudePage } from './pages/RudePage';

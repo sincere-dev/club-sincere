@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { VideoContainer } from '../../components/VideoContainer';
 import { TempNavButton } from '../../components/TempNavButton';
+import { VideoContainer } from '../../components/VideoContainer';
 
 export const ExchangePage = () => {
   return (
@@ -9,4 +9,4 @@ export const ExchangePage = () => {
       <TempNavButton />
     </VideoContainer>
   );
-}
+};

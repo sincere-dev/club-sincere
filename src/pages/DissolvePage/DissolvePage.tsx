@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { VideoContainer } from '../../components/VideoContainer';
-
 import { useNavigateToRandomPage } from '../../hooks';
 
 export const DissolvePage = () => {
@@ -28,4 +27,4 @@ export const DissolvePage = () => {
       </p>
     </VideoContainer>
   );
-}
+};

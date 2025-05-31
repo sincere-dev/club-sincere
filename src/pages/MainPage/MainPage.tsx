@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { AppHeading } from '../../components/AppHeading';
+
 import { MainContent } from './MainContent';
 
 export const MainPage = () => (

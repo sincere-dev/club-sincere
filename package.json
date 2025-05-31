@@ -19,6 +19,7 @@
     "typescript": "^4.4.2"
   },
   "devDependencies": {
+    "eslint-plugin-import": "^2.31.0",
     "gh-pages": "^6.3.0"
   },
   "scripts": {
@@ -30,26 +31,6 @@
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "object-curly-spacing": [
-        "error",
-        "always"
-      ],
-      "react/jsx-tag-spacing": [
-        "error",
-        {
-          "beforeSelfClosing": "always",
-          "afterOpening": "never",
-          "beforeClosing": "never"
-        }
-      ]
-    }
   },
   "browserslist": {
     "production": [
