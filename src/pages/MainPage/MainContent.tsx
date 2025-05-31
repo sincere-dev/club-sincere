@@ -1,19 +1,18 @@
 import React from 'react';
 
+import { DoorButton } from '../../components/DoorButton';
+import { OFF_WHITE } from '../../constants/styles';
 import { TITLE } from '../../constants/words';
-import { useNavigateToRandomPage } from '../../hooks';
 
 export const MainContent = () => {
-  const navigate = useNavigateToRandomPage();
-
   return (
-    <div>
+    <div style={{ background: OFF_WHITE }}>
       <div style={{ position: 'sticky', top: 0, marginTop: '30px' }}>
         <h1>{TITLE}</h1>
         <div
           style={{
             height: '140px',
-            background: 'linear-gradient(to bottom, white, rgba(255, 255, 255, 0))',
+            // background: 'linear-gradient(to bottom, white, rgba(255, 255, 255, 0))',
           }}
         />
       </div>
@@ -26,12 +25,13 @@ export const MainContent = () => {
           alignItems: 'center',
         }}
       >
-        <button
-          style={{ cursor: 'pointer' }}
-          onClick={navigate}
-        >
-          [enter]
-        </button>
+        <DoorButton />
+        {/*<button*/}
+        {/*  style={{ cursor: 'pointer' }}*/}
+        {/*  onClick={navigate}*/}
+        {/*>*/}
+        {/*  [enter]*/}
+        {/*</button>*/}
       </div>
     </div>
   );
