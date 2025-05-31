@@ -3,6 +3,7 @@ export enum AppRoutes {
   DISSOLVE = '/dissolve',
   EXCHANGE = '/exchange',
   HUMILIATION = '/humiliation',
+  KARL = '/karl',
   MEMORY = '/memory',
   PLUSSED = '/plussed',
   RUDE = '/rude',

@@ -6,6 +6,7 @@ import { AppRoutes } from './constants/routes';
 import { DissolvePage } from './pages/DissolvePage';
 import { ExchangePage } from './pages/ExchangePage';
 import { HumiliationPage } from './pages/HumiliationPage';
+import { KarlPage } from './pages/KarlPage';
 import { MainPage } from './pages/MainPage';
 import { MemoryPage } from './pages/MemoryPage';
 import { PlussedPage } from './pages/PlussedPage';
@@ -18,6 +19,7 @@ const App = () => (
       <Route path={AppRoutes.DISSOLVE} element={<DissolvePage />} />
       <Route path={AppRoutes.EXCHANGE} element={<ExchangePage />} />
       <Route path={AppRoutes.HUMILIATION} element={<HumiliationPage />} />
+      <Route path={AppRoutes.KARL} element={<KarlPage />} />
       <Route path={AppRoutes.MEMORY} element={<MemoryPage />} />
       <Route path={AppRoutes.PLUSSED} element={<PlussedPage />} />
       <Route path={AppRoutes.RUDE} element={<RudePage />} />
