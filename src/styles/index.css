@@ -13,3 +13,15 @@ h1 {
   font-family: Arial;
   font-style: italic;
 }
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
