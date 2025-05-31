@@ -3,7 +3,7 @@ import React from 'react';
 import { VideoContainer } from '../../components/VideoContainer';
 
 export const DissolvePage = () => (
-  <VideoContainer srcPath="/vid/dissolve.mp4" typeString="video/mp4">
+  <VideoContainer srcPath="/vid/dissolve.mp4" typeString="video/mp4" isFullPage>
     <p
       style={{
         position: 'absolute',
