@@ -1,7 +1,13 @@
-export const HOME = '/';
-export const DISSOLVE = '/dissolve';
-export const EXCHANGE = '/exchange';
-export const HUMILIATION = '/humiliation';
-export const MEMORY = '/memory';
-export const PLUSSED = '/plussed';
-export const RUDE = '/rude';
+export enum AppRoutes {
+  HOME = '/',
+  DISSOLVE = '/dissolve',
+  EXCHANGE = '/exchange',
+  HUMILIATION = '/humiliation',
+  MEMORY = '/memory',
+  PLUSSED = '/plussed',
+  RUDE = '/rude',
+}
+
+export const pageRoutes = Object.values(AppRoutes).filter(
+  (route) => route !== AppRoutes.HOME
+);

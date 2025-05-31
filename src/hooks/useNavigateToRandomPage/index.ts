@@ -1,0 +1,1 @@
+export { useNavigateToRandomPage } from './useNavigateToRandomPage';
