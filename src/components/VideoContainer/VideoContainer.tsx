@@ -30,6 +30,7 @@ export const VideoContainer = ({ srcPath, typeString, isFullPage, children }: Ow
           height: '100vh',
           background: 'black',
           display: 'flex',
+          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center'
         }}

@@ -14,7 +14,8 @@ export const RudePage = () => (
         fontFamily: 'Arial',
         fontSize: '60px',
         fontWeight: 'bold',
-      }}>
+      }}
+    >
       RUDE
     </p>
   </VideoContainer>

@@ -1,0 +1,1 @@
+export { HumiliationPage } from './HumiliationPage';
