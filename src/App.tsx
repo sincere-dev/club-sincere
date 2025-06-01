@@ -3,16 +3,18 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import { AppRoutes } from './constants/routes';
-import { DissolvePage } from './pages/DissolvePage';
-import { ExchangePage } from './pages/ExchangePage';
-import { FreePage } from './pages/FreePage';
-import { GibsonPage } from './pages/GibsonPage';
-import { HumiliationPage } from './pages/HumiliationPage';
-import { KarlPage } from './pages/KarlPage';
-import { MainPage } from './pages/MainPage';
-import { MemoryPage } from './pages/MemoryPage';
-import { PlussedPage } from './pages/PlussedPage';
-import { RudePage } from './pages/RudePage';
+import {
+  DissolvePage,
+  ExchangePage,
+  FreePage,
+  GibsonPage,
+  HumiliationPage,
+  KarlPage,
+  MainPage,
+  MemoryPage,
+  PlussedPage,
+  RudePage,
+} from './pages';
 
 const App = () => (
   <Router>
