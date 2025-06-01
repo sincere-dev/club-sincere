@@ -1,0 +1,101 @@
+#drag-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.pill-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  z-index: 10;
+  user-select: none;
+  pointer-events: auto;
+}
+
+.pill {
+  width: 100%;
+  height: 100%;
+  background-image: url(/public/img/solo-pill.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8;
+  animation: spin 2s linear infinite;
+}
+
+.karl-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  pointer-events: auto;
+}
+
+.karl-top {
+  flex-grow: 52;
+  background-image: url(/public/img/karl-top.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.animate-mouth-top {
+  animation: openCloseTop 0.2s ease-in-out 3;
+}
+
+.karl-bottom {
+  flex-grow: 30;
+  background-image: url(/public/img/karl-bottom.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.animate-mouth-bottom {
+  animation: openCloseBottom 0.2s ease-in-out 3;
+}
+
+.eye {
+  position: absolute;
+  pointer-events: none;
+  transform-orientation: center;
+  transition: transform 0.05s linear;
+  top: 35%;
+  width: 9%;
+  height: 9%;
+}
+
+.eye.left {
+  left: 54%;
+}
+
+.eye.right {
+  left: 77%;
+}
+
+@keyframes openCloseTop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes openCloseBottom {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
