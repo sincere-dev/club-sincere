@@ -14,12 +14,11 @@ export const MainContent = () => {
           alignItems: 'center',
         }}
       >
-        <a href="https://mycube.wedding/" target="_blank" rel="noopener noreferrer">
-          <img
-            style={{ maxWidth: '500px', marginTop: '30px' }}
-            src="/img/rude07.jpg"
-          />
-        </a>
+        <div className="main-image">
+          <a href="https://mycube.wedding/" target="_blank" rel="noopener noreferrer">
+            <img src="/img/rude07.jpg" />
+          </a>
+        </div>
         <DoorButton />
       </div>
     </div>

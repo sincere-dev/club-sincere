@@ -14,10 +14,20 @@ h1 {
   .hide-on-mobile {
     display: none !important;
   }
+
+  .main-image {
+    max-width: 100%;
+    margin-top: 14px;
+  }
 }
 
 @media (min-width: 768px) {
   .hide-on-desktop {
     display: none !important;
+  }
+
+  .main-image {
+    max-width: 500px;
+    margin-top: 30px;
   }
 }
