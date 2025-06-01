@@ -19,9 +19,9 @@ export const getNextUnvisitedRoute = (): string => {
     visitedRoutes = [];
 
     // Keep going
-    // unvisitedRoutes = [...pageRoutes];
+    unvisitedRoutes = [...pageRoutes];
     // Or back home
-    return AppRoutes.HOME;
+    // return AppRoutes.HOME;
   }
 
   const randomIndex = Math.floor(Math.random() * unvisitedRoutes.length);
