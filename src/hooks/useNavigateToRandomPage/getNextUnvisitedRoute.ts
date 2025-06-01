@@ -1,4 +1,4 @@
-import { AppRoutes, pageRoutes } from '../../constants/routes';
+import { pageRoutes } from '../../constants/routes';
 
 const LOCAL_STORAGE_KEY = 'sincerelyVisitedRoutes';
 

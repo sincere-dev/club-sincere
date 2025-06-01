@@ -16,7 +16,7 @@ export const MainContent = () => {
       >
         <div className="main-image">
           <a href="https://mycube.wedding/" target="_blank" rel="noopener noreferrer">
-            <img src="/img/rude07.jpg" />
+            <img src="/img/rude07.jpg" alt="rude07" />
           </a>
         </div>
         <DoorButton />

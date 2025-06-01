@@ -16,23 +16,22 @@ export const GibsonPage = () => {
 
   return (
     <VideoContainer srcPath="/vid/gibson.mp4" typeString="video/mp4" audioSrc="/audio/rc.mp3" isFullPage>
-      <p
+      <pre
         style={{
           position: 'absolute',
           top: 0,
           fontSize: '16px',
           color: 'white',
-          fontFamily: 'Arial',
+          fontFamily: 'monospace',
           fontWeight: 'bold',
           fontStyle: 'italic',
           textShadow: '2px 2px 8px rgba(0, 0, 0, 1.0)',
+          whiteSpace: 'pre-wrap',
         }}
         onClick={navigate}
       >
-        <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'monospace' }}>
-          {content}
-        </pre>
-      </p>
+        {content}
+      </pre>
     </VideoContainer>
   );
 };
