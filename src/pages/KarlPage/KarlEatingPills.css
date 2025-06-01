@@ -23,14 +23,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 8;
   animation: spin 2s linear infinite;
 }
 
 .karl-container {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0;
+  right: -8px;
   display: flex;
   flex-direction: column;
   z-index: 100;
@@ -67,7 +66,7 @@
   position: absolute;
   pointer-events: none;
   transform-orientation: center;
-  transition: transform 0.05s linear;
+  transition: transform 0.1s linear;
   top: 35%;
   width: 9%;
   height: 9%;
