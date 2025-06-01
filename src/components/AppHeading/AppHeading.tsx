@@ -1,9 +1,7 @@
 import React from 'react';
 
-import { TITLE } from '../../constants/words';
-
 export const AppHeading = () => (
-  <div style={{ position: 'fixed', top: 0, right: 0, left: 0, paddingTop: '3px', paddingRight: '3px', textAlign: 'center' }}>
-    <h1>{TITLE}</h1>
+  <div style={{ textAlign: 'center' }}>
+    <h1>SINCERE</h1>
   </div>
 );
