@@ -27,7 +27,7 @@ export const PhoneFallback = () => (
       be viewed using your phone.
       <br />
       <br />
-      please use a computer.
+      please use a computer to access.
       <br />
       <br />
       thank you.

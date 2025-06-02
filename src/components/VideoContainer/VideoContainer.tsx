@@ -1,4 +1,4 @@
-import React, { useRef, ReactNode, CSSProperties } from 'react';
+import React, { useCallback, useRef, useState, ReactNode, CSSProperties } from 'react';
 
 import { PhoneFallback } from '../PhoneFallback';
 
@@ -19,6 +19,7 @@ export const VideoContainer = ({
 }: OwnProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   const videoStyle: CSSProperties = isFullPage ? {
     width: '100%',
@@ -30,6 +31,13 @@ export const VideoContainer = ({
     videoRef.current?.play();
     audioRef.current?.play();
   };
+
+  const handleClick = useCallback(() => {
+    if (!hasInteracted) {
+      handlePlay();
+      setHasInteracted(true);
+    }
+  }, [hasInteracted]);
 
   return (
     <>
@@ -44,10 +52,10 @@ export const VideoContainer = ({
           alignItems: 'center'
         }}
         className="hide-on-mobile"
+        onClick={handleClick}
       >
         <video
           style={videoStyle}
-          onClick={handlePlay}
           ref={videoRef}
           loop
         >
@@ -55,6 +63,18 @@ export const VideoContainer = ({
         </video>
         {audioSrc && (
           <audio ref={audioRef} src={audioSrc} loop />
+        )}
+        {!hasInteracted && (
+          <div
+            onClick={handleClick}
+            style={{
+              position: 'absolute',
+              inset: 0,
+              zIndex: 9999,
+              background: 'transparent',
+              pointerEvents: 'auto',
+            }}
+          />
         )}
         {children}
       </div>
