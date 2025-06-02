@@ -10,6 +10,14 @@ h1 {
   font-style: italic;
 }
 
+.clickable-text {
+  cursor: pointer;
+}
+
+.clickable-text:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) {
   .hide-on-mobile {
     display: none !important;

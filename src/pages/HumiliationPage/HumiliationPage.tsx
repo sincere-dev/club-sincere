@@ -16,6 +16,7 @@ export const HumiliationPage = () => {
           fontWeight: 'bold',
           fontStyle: 'italic',
         }}
+        className="clickable-text"
         onClick={navigate}
       >
         ushering in a century of humiliation.

@@ -49,7 +49,8 @@ export const VideoContainer = ({
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          cursor: hasInteracted ? '' : 'pointer',
         }}
         className="hide-on-mobile"
         onClick={handleClick}

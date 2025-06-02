@@ -21,6 +21,7 @@ export const FreePage = () => {
           fontWeight: 'bold',
           fontStyle: 'italic',
         }}
+        className="clickable-text"
         onClick={navigate}
       >
         :)

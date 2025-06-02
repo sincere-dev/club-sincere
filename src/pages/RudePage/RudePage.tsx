@@ -19,6 +19,7 @@ export const RudePage = () => {
           fontSize: '60px',
           fontWeight: 'bold',
         }}
+        className="clickable-text"
         onClick={navigate}
       >
         RUDE

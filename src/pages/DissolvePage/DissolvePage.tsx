@@ -21,6 +21,7 @@ export const DissolvePage = () => {
           fontStyle: 'italic',
           textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)',
         }}
+        className="clickable-text"
         onClick={navigate}
       >
         let your identity dissolve.

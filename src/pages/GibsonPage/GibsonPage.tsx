@@ -28,6 +28,7 @@ export const GibsonPage = () => {
           textShadow: '2px 2px 8px rgba(0, 0, 0, 1.0)',
           whiteSpace: 'pre-wrap',
         }}
+        className="clickable-text"
         onClick={navigate}
       >
         {content}
