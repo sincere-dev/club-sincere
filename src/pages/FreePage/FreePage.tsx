@@ -11,10 +11,8 @@ export const FreePage = () => {
       <p
         style={{
           position: 'absolute',
-          right: 0,
-          bottom: 0,
-          paddingRight: '80px',
-          paddingBottom: '60px',
+          right: 30,
+          bottom: 10,
           color: 'white',
           fontFamily: 'Arial',
           fontSize: '60px',
