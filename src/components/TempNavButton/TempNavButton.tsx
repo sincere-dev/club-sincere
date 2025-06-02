@@ -6,17 +6,19 @@ export const TempNavButton = () => {
   const navigate = useNavigateToRandomPage();
 
   return (
-    <button
+    <p
       style={{
         position: 'absolute',
-        right: 0,
+        right: 30,
         bottom: 0,
-        marginRight: '8px',
-        marginBottom: '8px',
+        color: 'white',
+        fontSize: '60px',
+        fontWeight: 'bold',
       }}
+      className="clickable-text"
       onClick={navigate}
     >
       →
-    </button>
+    </p>
   );
 };
