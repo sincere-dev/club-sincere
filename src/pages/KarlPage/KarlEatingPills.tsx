@@ -149,19 +149,19 @@ const Karl = ({ isDragging, isKarlEating, cursorPos }: KarlProps) => {
       }}
     >
       <div className={`karl-top ${isKarlEating ? 'animate-mouth-top' : ''}`}>
-        {isDragging && (
+        {!isKarlEating && (
           <>
             <img
               ref={leftEyeRef}
               src="/img/eye.png"
-              className="eye left"
+              className={`eye left ${isDragging ? 'visible' : 'hidden'}`}
               alt="eye left"
               style={{ transform: `rotate(${getEyeRotation(leftEyeRef.current, cursorPos)}deg)` }}
             />
             <img
               ref={rightEyeRef}
               src="/img/eye.png"
-              className="eye right"
+              className={`eye right ${isDragging ? 'visible' : 'hidden'}`}
               alt="eye right"
               style={{ transform: `rotate(${getEyeRotation(rightEyeRef.current, cursorPos)}deg)` }}
             />

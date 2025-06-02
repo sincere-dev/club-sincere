@@ -65,12 +65,20 @@
 .eye {
   position: absolute;
   pointer-events: none;
-  transform-orientation: center;
-  transition: transform 0.1s linear;
   top: 35%;
   width: 9%;
   height: 9%;
   filter: grayscale(100%) brightness(0.65) contrast(1.5);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.eye.visible {
+  opacity: 0.8;
+}
+
+.eye.hidden {
+  opacity: 0;
 }
 
 .eye.left {
