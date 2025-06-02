@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.512ee41a.css",
-    "main.js": "/static/js/main.e7532579.js",
+    "main.css": "/static/css/main.48c69220.css",
+    "main.js": "/static/js/main.f8fc6aac.js",
     "static/media/solo-pill.gif": "/static/media/solo-pill.63db827e0287b8fd5686.gif",
     "static/media/godoqon.otf": "/static/media/godoqon.0e2154cbe934d6fc01b7.otf",
     "static/media/karl-top.gif": "/static/media/karl-top.250e6e0525ef84feddb1.gif",
     "index.html": "/index.html",
-    "main.512ee41a.css.map": "/static/css/main.512ee41a.css.map",
-    "main.e7532579.js.map": "/static/js/main.e7532579.js.map"
+    "main.48c69220.css.map": "/static/css/main.48c69220.css.map",
+    "main.f8fc6aac.js.map": "/static/js/main.f8fc6aac.js.map"
   },
   "entrypoints": [
-    "static/css/main.512ee41a.css",
-    "static/js/main.e7532579.js"
+    "static/css/main.48c69220.css",
+    "static/js/main.f8fc6aac.js"
   ]
 }
