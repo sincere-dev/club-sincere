@@ -7,6 +7,7 @@ interface OwnProps {
   typeString: string;
   audioSrc?: string;
   isFullPage?: boolean;
+  childrenTop?: boolean;
   children?: ReactNode;
 }
 
@@ -15,6 +16,7 @@ export const VideoContainer = ({
   typeString,
   audioSrc,
   isFullPage,
+  childrenTop,
   children,
 }: OwnProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -55,6 +57,7 @@ export const VideoContainer = ({
         className="hide-on-mobile"
         onClick={handleClick}
       >
+        {childrenTop && children}
         <video
           style={videoStyle}
           ref={videoRef}
@@ -77,7 +80,7 @@ export const VideoContainer = ({
             }}
           />
         )}
-        {children}
+        {!childrenTop && children}
       </div>
       <PhoneFallback />
     </>

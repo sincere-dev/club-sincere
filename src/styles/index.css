@@ -5,6 +5,12 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: Aptos;
+  src: local("Aptos"),
+  url(../assets/fonts/aptos-serif.ttf);
+}
+
 h1 {
   font-family: Arial;
   font-style: italic;

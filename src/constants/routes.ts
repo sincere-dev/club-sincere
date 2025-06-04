@@ -1,5 +1,6 @@
 export enum AppRoutes {
   HOME = '/',
+  ALBINO = '/albino',
   DISSOLVE = '/dissolve',
   EXCHANGE = '/exchange',
   FREE = '/free',

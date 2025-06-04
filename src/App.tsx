@@ -15,11 +15,13 @@ import {
   PlussedPage,
   RudePage,
 } from './pages';
+import { AlbinoPage } from './pages/AlbinoPage';
 
 const App = () => (
   <Router>
     <Routes>
       <Route path={AppRoutes.HOME} element={<MainPage />} />
+      <Route path={AppRoutes.ALBINO} element={<AlbinoPage />} />
       <Route path={AppRoutes.DISSOLVE} element={<DissolvePage />} />
       <Route path={AppRoutes.EXCHANGE} element={<ExchangePage />} />
       <Route path={AppRoutes.FREE} element={<FreePage />} />

@@ -1,0 +1,1 @@
+export { AlbinoPage } from './AlbinoPage';
