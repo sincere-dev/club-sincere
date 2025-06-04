@@ -4,7 +4,7 @@ export const PhoneFallback = () => (
   <div
     style={{
       height: '100vh',
-      background: 'black',
+      background: '#070a06',
     }}
     className="hide-on-desktop"
   >
