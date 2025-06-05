@@ -13,7 +13,6 @@ export const AlbinoPage = () => {
           fontFamily: 'Aptos',
           fontSize: '50px',
         }}
-        className="clickable-text"
       >
         this came to me in a dream
       </p>
