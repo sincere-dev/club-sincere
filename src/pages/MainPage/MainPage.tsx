@@ -11,7 +11,7 @@ import { MainContent } from './MainContent';
 export const MainPage = () => {
   useEffect(() => {
     ReactGA.initialize(GOOGLE_ANALYTICS_ID);
-    ReactGA.send({ hitType: "pageView", page: "/", title: "Main Page" });
+    ReactGA.send({ hitType: "pageview", page: "/", title: "Main Page" });
   }, []);
 
   return (
