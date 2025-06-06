@@ -12,10 +12,10 @@ export const FreePage = () => {
         style={{
           position: 'absolute',
           left: '25%',
-          top: 10,
+          top: 0,
           color: 'white',
           fontFamily: 'Arial',
-          fontSize: '172px',
+          fontSize: '280px',
           fontWeight: 'bold',
           fontStyle: 'italic',
         }}
