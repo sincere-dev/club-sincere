@@ -25,10 +25,10 @@ const Popup = ({
       <div className="top-bar" />
       <p>{text}</p>
       <div className="button-bar">
-        <button onClick={onBack}>
+        <button onClick={onBack} className="border">
           {onBackText}
         </button>
-        <button onClick={onForward}>
+        <button onClick={onForward} className="border">
           {onForwardText}
         </button>
       </div>
