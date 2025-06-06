@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import ReactGA from 'react-ga4';
 
 import { AppHeading } from '../../components/AppHeading';
@@ -11,7 +12,7 @@ export const MainPage = () => {
   useEffect(() => {
     ReactGA.initialize(GOOGLE_ANALYTICS_ID);
     ReactGA.send({ hitType: "pageView", page: "/", title: "Main Page" });
-  }, [])
+  }, []);
 
   return (
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', background: OFF_WHITE }}>
@@ -19,4 +20,4 @@ export const MainPage = () => {
       <MainContent />
     </div>
   );
-}
+};
