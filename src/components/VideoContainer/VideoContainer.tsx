@@ -7,6 +7,8 @@ interface OwnProps {
   typeString: string;
   audioSrc?: string;
   isFullPage?: boolean;
+  shouldPlayOnce?: boolean;
+  onVideoEnd?: () => void;
   childrenTop?: boolean;
   children?: ReactNode;
 }
@@ -16,6 +18,8 @@ export const VideoContainer = ({
   typeString,
   audioSrc,
   isFullPage,
+  shouldPlayOnce,
+  onVideoEnd,
   childrenTop,
   children,
 }: OwnProps) => {
@@ -61,7 +65,8 @@ export const VideoContainer = ({
         <video
           style={videoStyle}
           ref={videoRef}
-          loop
+          loop={!shouldPlayOnce}
+          onEnded={() => onVideoEnd?.()}
         >
           <source src={srcPath} type={typeString} />
         </video>

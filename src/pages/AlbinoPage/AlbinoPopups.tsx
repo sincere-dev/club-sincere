@@ -1,15 +1,49 @@
 import React, { useState } from 'react';
 
+import { TempNavButton } from '../../components/TempNavButton';
 import { useNavigateToRandomPage } from '../../hooks';
 
 import "./popup.css";
 
+interface PopupProps {
+  text: string;
+  onBackText: string;
+  onForwardText: string;
+  onBack: () => void;
+  onForward: () => void;
+}
+
+const Popup = ({
+  text,
+  onBackText,
+  onForwardText,
+  onBack,
+  onForward,
+}: PopupProps) => {
+  return (
+    <div className="popup border">
+      <div className="top-bar" />
+      <p>{text}</p>
+      <div className="button-bar">
+        <button onClick={onBack}>
+          {onBackText}
+        </button>
+        <button onClick={onForward}>
+          {onForwardText}
+        </button>
+      </div>
+    </div>
+  );
+};
+
 export const AlbinoPopups = () => {
   const navigate = useNavigateToRandomPage();
 
+  const [didClick, setDidClick] = useState<boolean>(false);
   const [popups, setPopups] = useState<number>(0);
 
   const handleClickContainer = () => {
+    setDidClick(true);
     if (popups === 0) {
       setPopups(1);
     }
@@ -26,82 +60,34 @@ export const AlbinoPopups = () => {
       onClick={handleClickContainer}
     >
       {popups > 0 && (
-        <div
-          style={{
-            position: 'absolute',
-            top: '30%',
-            left: '30%',
-          }}
-          className="popup border"
-        >
-          <div className="top-bar" />
-          <p>that must have been a mistake, surely you want to continue watching.</p>
-          <div className="button-bar">
-            <button
-              onClick={() => setPopups((popups) => popups - 1)}
-            >
-              continue watching
-            </button>
-            <button
-              onClick={() => setPopups((popups) => popups + 1)}
-              style={{ marginLeft: '8px' }}
-            >
-              i meant it
-            </button>
-          </div>
-        </div>
+        <Popup
+          text="that must have been a mistake, surely you want to continue watching."
+          onBackText="continue watching"
+          onForwardText="i meant it"
+          onBack={() => setPopups((popups) => popups - 1)}
+          onForward={() => setPopups((popups) => popups + 1)}
+        />
       )}
       {popups > 1 && (
-        <div
-          style={{
-            position: 'absolute',
-            top: '33%',
-            left: '33%',
-          }}
-          className="popup border"
-        >
-          <div className="top-bar" />
-          <p>what, exactly, do you mean?</p>
-          <div className="button-bar">
-            <button
-              onClick={() => setPopups((popups) => popups - 1)}
-            >
-              walk it back
-            </button>
-            <button
-              onClick={() => setPopups((popups) => popups + 1)}
-              style={{ marginLeft: '8px' }}
-            >
-              agitate
-            </button>
-          </div>
-        </div>
+        <Popup
+          text="what, exactly, do you mean?"
+          onBackText="walk it back"
+          onForwardText="agitate"
+          onBack={() => setPopups((popups) => popups - 1)}
+          onForward={() => setPopups((popups) => popups + 1)}
+        />
       )}
       {popups > 2 && (
-        <div
-          style={{
-            position: 'absolute',
-            top: '36%',
-            left: '36%',
-          }}
-          className="popup border"
-        >
-          <div className="top-bar" />
-          <p>who the fuck do you think you are?</p>
-          <div className="button-bar">
-            <button
-              onClick={() => setPopups((popups) => popups - 1)}
-            >
-              not sure
-            </button>
-            <button
-              onClick={navigate}
-              style={{ marginLeft: '8px' }}
-            >
-              piece of shit
-            </button>
-          </div>
-        </div>
+        <Popup
+          text="who the fuck do you think you are?"
+          onBackText="not sure"
+          onForwardText="piece of shit"
+          onBack={() => setPopups((popups) => popups - 1)}
+          onForward={navigate}
+        />
+      )}
+      {didClick && popups === 0 && (
+        <TempNavButton />
       )}
     </div>
   );

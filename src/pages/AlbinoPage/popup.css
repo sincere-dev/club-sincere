@@ -1,12 +1,29 @@
 .popup {
+  position: absolute;
   background: #BFBFBF;
   width: 20%;
   min-width: 320px;
 }
 
+.popup:nth-child(1) {
+  top: 30%;
+  left: 30%;
+}
+
+.popup:nth-child(2) {
+  top: 33%;
+  left: 33%;
+}
+
+.popup:nth-child(3) {
+  top: 36%;
+  left: 36%;
+}
+
 .popup > p {
   padding: 10px 20px 0 20px;
   font-family: 'Aptos';
+  min-height: 60px;
 }
 
 .top-bar {
@@ -32,4 +49,5 @@
 
 .button-bar > button {
   cursor: pointer;
+  margin-left: 8px;
 }

@@ -148,7 +148,7 @@ const Karl = ({ isDragging, isKarlEating, cursorPos }: KarlProps) => {
         height: KARL_SIZE,
       }}
     >
-      <div className={`karl-top ${isKarlEating ? 'animate-mouth-top' : ''}`}>
+      <div className={`karl-top ${isKarlEating ? 'animate-mouth-top-eat' : ''}`}>
         {!isKarlEating && (
           <>
             <img
@@ -168,7 +168,7 @@ const Karl = ({ isDragging, isKarlEating, cursorPos }: KarlProps) => {
           </>
         )}
       </div>
-      <div className={`karl-bottom ${isKarlEating ? 'animate-mouth-bottom' : ''}`} />
+      <div className={`karl-bottom ${isDragging ? 'animate-mouth-bottom-open' : ''} ${isKarlEating ? 'animate-mouth-bottom-eat' : ''}`} />
     </div>
   );
 };

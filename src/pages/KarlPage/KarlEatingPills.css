@@ -45,10 +45,6 @@
   pointer-events: none;
 }
 
-.animate-mouth-top {
-  animation: openCloseTop 0.2s ease-in-out 3;
-}
-
 .karl-bottom {
   flex-grow: 30;
   background-image: url(/public/img/karl-bottom.gif);
@@ -58,8 +54,16 @@
   pointer-events: none;
 }
 
-.animate-mouth-bottom {
+.animate-mouth-top-eat {
+  animation: openCloseTop 0.2s ease-in-out 3;
+}
+
+.animate-mouth-bottom-eat {
   animation: openCloseBottom 0.2s ease-in-out 3;
+}
+
+.animate-mouth-bottom-open {
+  transform: translateY(10px);
 }
 
 .eye {
