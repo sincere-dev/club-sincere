@@ -57,6 +57,7 @@ export const MineSweeperPage = () => {
               }}
               className="border-inverse"
             >
+              
               <div style={{ padding: '8px' }} className="border">
                 😎
               </div>
