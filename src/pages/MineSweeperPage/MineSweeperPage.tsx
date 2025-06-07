@@ -5,6 +5,21 @@ import { useNavigateToRandomPage } from '../../hooks';
 
 import "./minesweeper.css";
 
+const FakeScore = () => (
+  <div
+    style={{
+      fontFamily: 'Digital',
+      fontSize: '50px',
+      padding: '6px 8px 0',
+      background: 'black',
+      color: 'red',
+      lineHeight: 0.8,
+    }}
+  >
+    000
+  </div>
+);
+
 export const MineSweeperPage = () => {
   const navigate = useNavigateToRandomPage();
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -52,15 +67,18 @@ export const MineSweeperPage = () => {
             <div
               style={{
                 display: 'flex',
-                justifyContent: 'center',
                 alignItems: 'center',
+                padding: '8px',
               }}
               className="border-inverse"
             >
-              
+              <FakeScore />
+              <div style={{ flex: 1 }} />
               <div style={{ padding: '8px' }} className="border">
                 😎
               </div>
+              <div style={{ flex: 1 }} />
+              <FakeScore />
             </div>
             <div
               style={{

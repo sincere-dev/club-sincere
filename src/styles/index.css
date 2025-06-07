@@ -11,6 +11,12 @@
   url(../assets/fonts/aptos-serif.ttf);
 }
 
+@font-face {
+  font-family: Digital;
+  src: local("Digital"),
+  url(../assets/fonts/digital-7.ttf);
+}
+
 h1 {
   font-family: Arial;
   font-style: italic;
