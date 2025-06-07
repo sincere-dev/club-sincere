@@ -102,29 +102,37 @@ export const MineSweeperPage = () => {
           </div>
         </div>
       )}
-      {showPopup && (
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'rgba(128, 128, 128, 0.7)',
+          pointerEvents: showPopup ? 'auto' : 'none',
+          opacity: showPopup ? 1 : 0,
+          transition: 'opacity 0.6s ease',
+        }}
+      >
         <div
           style={{
             position: 'absolute',
-            inset: 0,
-            zIndex: 10,
-            background: 'rgba(128, 128, 128, 0.40)',
+            top: '40%',
+            left: '50%',
+            transform: 'translateX(-50%)',
           }}
+          className="popup border"
         >
-          <div className="popup border">
-            <div className="top-bar" />
-            <p>do you think you can trick me?</p>
-            <div className="button-bar">
-              <button onClick={handleClick} className="border">
-                no
-              </button>
-              <button onClick={handleClick} className="border">
-                yes
-              </button>
-            </div>
+          <div className="top-bar" />
+          <p>do you think you can trick me?</p>
+          <div className="button-bar">
+            <button onClick={handleClick} className="border">
+              no
+            </button>
+            <button onClick={handleClick} className="border">
+              yes
+            </button>
           </div>
         </div>
-      )}
+      </div>
       <video
         onEnded={navigate}
         ref={videoRef}
