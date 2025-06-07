@@ -22,7 +22,9 @@ const Popup = ({
 }: PopupProps) => {
   return (
     <div className="popup border">
-      <div className="top-bar" />
+      <div className="top-bar">
+        <img src="/img/frog.gif" alt="frog" className="top-bar-corner" />
+      </div>
       <p>{text}</p>
       <div className="button-bar">
         <button onClick={onBack} className="border">
@@ -41,6 +43,8 @@ export const AlbinoPopups = () => {
 
   const [didClick, setDidClick] = useState<boolean>(false);
   const [popups, setPopups] = useState<number>(0);
+
+  const showNav = didClick && popups === 0;
 
   const handleClickContainer = () => {
     setDidClick(true);
@@ -86,9 +90,22 @@ export const AlbinoPopups = () => {
           onForward={navigate}
         />
       )}
-      {didClick && popups === 0 && (
-        <TempNavButton />
-      )}
+      <div
+        style={{
+          position: 'absolute',
+          right: 0,
+          bottom: 0,
+          zIndex: 11,
+          cursor: 'pointer',
+          width: '15%',
+          opacity: showNav ? 1 : 0,
+          pointerEvents: showNav ? 'auto' : 'none',
+          transition: 'opacity 1s ease-in-out',
+        }}
+        onClick={navigate}
+      >
+        <img src="/img/frog.gif" alt="frog" />
+      </div>
     </div>
   );
 };
