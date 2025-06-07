@@ -124,7 +124,7 @@ export const MineSweeperPage = () => {
           <div className="top-bar" />
           <p>do you think you can trick me?</p>
           <div className="button-bar">
-            <button onClick={handleClick} className="border">
+            <button onClick={() => setShowPopup(false)} className="border">
               no
             </button>
             <button onClick={handleClick} className="border">
