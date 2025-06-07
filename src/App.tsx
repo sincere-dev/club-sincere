@@ -13,6 +13,7 @@ import {
   KarlPage,
   MainPage,
   MemoryPage,
+  MineSweeperPage,
   PlussedPage,
   RudePage,
 } from './pages';
@@ -29,6 +30,7 @@ const App = () => (
       <Route path={AppRoutes.HUMILIATION} element={<HumiliationPage />} />
       <Route path={AppRoutes.KARL} element={<KarlPage />} />
       <Route path={AppRoutes.MEMORY} element={<MemoryPage />} />
+      <Route path={AppRoutes.MINESWEEPER} element={<MineSweeperPage />} />
       <Route path={AppRoutes.PLUSSED} element={<PlussedPage />} />
       <Route path={AppRoutes.RUDE} element={<RudePage />} />
     </Routes>

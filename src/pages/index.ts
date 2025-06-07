@@ -7,5 +7,6 @@ export * from './HumiliationPage';
 export * from './KarlPage';
 export * from './MainPage';
 export * from './MemoryPage';
+export * from './MineSweeperPage';
 export * from './PlussedPage';
 export * from './RudePage';

@@ -1,0 +1,9 @@
+.cell {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background: lightgray;
+}
+
+.cell:hover {
+  transform: scale(1.15);
+}

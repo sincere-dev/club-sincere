@@ -1,0 +1,1 @@
+export { MineSweeperPage } from './MineSweeperPage';

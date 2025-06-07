@@ -24,6 +24,69 @@ h1 {
   text-decoration: underline;
 }
 
+.border {
+  border-top: 2px solid white;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+  border-left: 2px solid white;
+}
+
+.border-inverse {
+  border-top: 2px solid gray;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid gray;
+}
+
+.popup {
+  position: absolute;
+  background: #BFBFBF;
+  width: 20%;
+  min-width: 320px;
+}
+
+.popup:nth-child(1) {
+  top: 30%;
+  left: 30%;
+}
+
+.popup:nth-child(2) {
+  top: 33%;
+  left: 33%;
+}
+
+.popup:nth-child(3) {
+  top: 36%;
+  left: 36%;
+}
+
+.popup > p {
+  padding: 10px 20px 0 20px;
+  font-family: 'Aptos';
+  min-height: 60px;
+}
+
+.popup > .top-bar {
+  height: 20px;
+  background: -moz-linear-gradient(left, #1b007d 18%, #0081d1 100%);
+  background: -webkit-linear-gradient(left, #1b007d 18%,#0081d1 100%);
+  background: linear-gradient(to right, #1b007d 18%,#0081d1 100%);
+  position: relative;
+}
+
+.popup > .button-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px 10px 10px;
+}
+
+.popup > .button-bar > button {
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 0px 12px
+}
+
 @media (max-width: 767px) {
   .hide-on-mobile {
     display: none !important;

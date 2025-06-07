@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 
-import { TempNavButton } from '../../components/TempNavButton';
 import { useNavigateToRandomPage } from '../../hooks';
-
-import "./popup.css";
 
 interface PopupProps {
   text: string;
@@ -23,7 +20,16 @@ const Popup = ({
   return (
     <div className="popup border">
       <div className="top-bar">
-        <img src="/img/frog.gif" alt="frog" className="top-bar-corner" />
+        <img
+          style={{
+            position: 'absolute',
+            right: '4px',
+            top: '1px',
+            width: '42px',
+          }}
+          src="/img/frog.gif"
+          alt="frog"
+        />
       </div>
       <p>{text}</p>
       <div className="button-bar">

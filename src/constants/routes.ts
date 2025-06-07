@@ -8,6 +8,7 @@ export enum AppRoutes {
   HUMILIATION = '/humiliation',
   KARL = '/karl',
   MEMORY = '/memory',
+  MINESWEEPER = '/minesweeper',
   PLUSSED = '/plussed',
   RUDE = '/rude',
 }
