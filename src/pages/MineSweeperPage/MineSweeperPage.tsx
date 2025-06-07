@@ -65,13 +65,13 @@ export const MineSweeperPage = () => {
               style={{
                 flex: 1,
                 display: 'grid',
-                gridTemplateColumns: 'repeat(10, 1fr)',
-                gridTemplateRows: 'repeat(10, 1fr)',
+                gridTemplateColumns: 'repeat(30, 1fr)',
+                gridTemplateRows: 'repeat(30, 1fr)',
                 marginTop: '8px',
               }}
               className="border-inverse"
             >
-              {Array.from({ length: 100 }).map((_, i) => (
+              {Array.from({ length: 900 }).map((_, i) => (
                 <div
                   key={i}
                   className="border cell"
