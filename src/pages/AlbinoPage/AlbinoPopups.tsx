@@ -59,7 +59,8 @@ export const AlbinoPopups = () => {
         position: 'absolute',
         inset: 0,
         zIndex: 10,
-        background: popups > 0 ? 'rgba(128, 128, 128, 0.25)': '',
+        background: popups > 0 ? 'rgba(128, 128, 128, 0.40)' : 'rgba(128, 128, 128, 0)',
+        transition: 'background 0.6s ease',
       }}
       onClick={handleClickContainer}
     >
