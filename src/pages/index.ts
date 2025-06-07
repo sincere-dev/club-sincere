@@ -1,3 +1,4 @@
+export * from './AlbinoPage';
 export * from './DissolvePage';
 export * from './ExchangePage';
 export * from './FreePage';

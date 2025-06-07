@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import { AppRoutes } from './constants/routes';
 import {
+  AlbinoPage,
   DissolvePage,
   ExchangePage,
   FreePage,
@@ -15,7 +16,6 @@ import {
   PlussedPage,
   RudePage,
 } from './pages';
-import { AlbinoPage } from './pages/AlbinoPage';
 
 const App = () => (
   <Router>
