@@ -75,7 +75,7 @@ export const MineSweeperPage = () => {
               <FakeScore />
               <div style={{ flex: 1 }} />
               <div style={{ padding: '8px' }} className="border">
-                😎
+                {showPopup ? '😎' : '🙂'}
               </div>
               <div style={{ flex: 1 }} />
               <FakeScore />
