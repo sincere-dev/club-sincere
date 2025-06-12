@@ -22,7 +22,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  animation: spin 2s linear infinite;
+  animation: spin 6s linear infinite;
 }
 
 .karl-container {
