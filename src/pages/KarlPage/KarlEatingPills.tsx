@@ -120,6 +120,7 @@ const DraggablePill = ({ id, top, left, isDragging }: DraggablePillProps) => {
         width: PILL_SIZE,
         height: PILL_SIZE,
         transition: isDragging ? 'none' : 'top 0.1s, left 0.1s',
+        cursor: isDragging ? 'grabbing' : 'grab',
       }}
     >
       <div className="pill" />
