@@ -45,7 +45,9 @@ export const MinesweeperPage = () => {
       {!didTrigger && (
         <div
           style={{
-            background: 'black',
+            backgroundImage: 'url(/img/windows-bg.png)',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '600px',
             height: '100vh',
             display: 'flex',
             justifyContent: 'center',
