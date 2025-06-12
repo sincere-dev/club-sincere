@@ -20,7 +20,7 @@ const FakeScore = () => (
   </div>
 );
 
-export const MineSweeperPage = () => {
+export const MinesweeperPage = () => {
   const navigate = useNavigateToRandomPage();
   const videoRef = useRef<HTMLVideoElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -122,7 +122,7 @@ export const MineSweeperPage = () => {
           className="popup border"
         >
           <div className="top-bar" />
-          <p>do you think you can trick me?</p>
+          <p>are you trying to plant your flag?</p>
           <div className="button-bar">
             <button onClick={() => setShowPopup(false)} className="border">
               no
@@ -138,12 +138,12 @@ export const MineSweeperPage = () => {
         ref={videoRef}
         style={{
           display: didTrigger ? 'block' : 'none',
+          width: '100vw',
+          height: '100vh',
+          objectFit: 'cover',
         }}
       >
-        <source
-          src="/vid/explosion.mp4"
-          type="video/mp4"
-        />
+        <source src="/vid/explosion.mp4" type="video/mp4" />
       </video>
       <audio ref={audioRef} src='/audio/explosion.mp3' />
       <PhoneFallback />

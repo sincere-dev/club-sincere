@@ -1,1 +1,1 @@
-export { MineSweeperPage } from './MineSweeperPage';
+export { MinesweeperPage } from './MinesweeperPage';
