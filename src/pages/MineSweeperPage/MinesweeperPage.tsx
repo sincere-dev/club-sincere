@@ -124,7 +124,7 @@ export const MinesweeperPage = () => {
           className="popup border"
         >
           <div className="top-bar" />
-          <p>are you trying to plant your flag?</p>
+          <p>plant a flag?</p>
           <div className="button-bar">
             <button onClick={() => setShowPopup(false)} className="border">
               no
