@@ -1,5 +1,9 @@
 export enum AppRoutes {
   HOME = '/',
+
+  // in dev
+  PHOTOBOOTH = '/photo-booth',
+
   ALBINO = '/albino',
   DISSOLVE = '/dissolve',
   EXCHANGE = '/exchange',
@@ -13,6 +17,12 @@ export enum AppRoutes {
   RUDE = '/rude',
 }
 
+const routesNotInRandomNav = [
+  AppRoutes.HOME,
+  // the below routes are secret or in development
+  AppRoutes.PHOTOBOOTH
+];
+
 export const pageRoutes = Object.values(AppRoutes).filter(
-  (route) => route !== AppRoutes.HOME
+  (route) => !routesNotInRandomNav.includes(route)
 );

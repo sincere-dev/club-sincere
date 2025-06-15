@@ -8,5 +8,6 @@ export * from './KarlPage';
 export * from './MainPage';
 export * from './MemoryPage';
 export * from './MineSweeperPage';
+export * from './PhotoboothPage';
 export * from './PlussedPage';
 export * from './RudePage';
